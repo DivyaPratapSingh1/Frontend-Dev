@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frameset Layout Example</title>
+  <!-- Beginner: Using frameset and frame tags -->
+</head>
+
+<!-- frameset replaces body in older HTML when frames are used -->
+<frameset rows="25%,75%">
+  <!-- Top frame shows navigation links. It loads nav_frame.html -->
+  <frame src="nav_frame.html" name="topFrame" title="Navigation Frame">
+  <!-- Bottom frame shows welcome message. It loads message_frame.html -->
+  <frame src="message_frame.html" name="bottomFrame" title="Content Frame">
+  <noframes>
+    <body>
+      <p>Your browser does not support frames. Visit the site normally.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>

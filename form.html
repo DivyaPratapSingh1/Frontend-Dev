@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with iframe result</title>
+  <!-- This form will submit into the iframe and load result.html -->
+</head>
+<body>
+  <h1>Submit the Form</h1>
+  <!-- target the iframe by name so the result loads inside the iframe -->
+  <form action="result.html" method="get" target="resultFrame">
+    <label>Enter something:<br>
+      <input type="text" name="textinput" required>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Result Below</h2>
+  <iframe name="resultFrame" width="100%" height="150" title="Result Frame" frameborder="1"></iframe>
+</body>
+</html>

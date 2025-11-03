@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload - JPG/PNG Only</title>
+  <!-- accept restricts selectable file types in the file chooser -->
+</head>
+<body>
+  <h1>Upload an Image</h1>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label>Select image to upload (only .jpg or .png):<br>
+      <input type="file" name="image" accept=".jpg, .jpeg, .png" required>
+    </label>
+    <p>Allowed files: JPG or PNG images only (example: photo.jpg or image.png).</p>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>

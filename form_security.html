@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Security Demo</title>
+  <!-- Demonstrates autocomplete="off" and required on inputs -->
+</head>
+<body>
+  <h1>Secure Form Example</h1>
+  <form action="#" method="post" autocomplete="off">
+    <label>Username:<br>
+      <input type="text" name="username" required>
+    </label>
+    <br><br>
+    <label>Password:<br>
+      <input type="password" name="password" required>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>Note: Turning off autocomplete can reduce the chance that sensitive values (like passwords)
+     are saved in the browser on a shared computer. It is not a full security solution — server-side
+     protections are also required.</p>
+</body>
+</html>
