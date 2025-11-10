@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Flip Animation</title>
+<style>
+    /* Center the card */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f8;
+}
+
+/* Perspective wrapper */
+.card-container {
+  perspective: 1000px;
+}
+
+/* Card base */
+.card {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Front face */
+.card-front {
+  background: white;
+  z-index: 2;
+}
+
+.card-front img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* Back face */
+.card-back {
+  background: #1e3a8a;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-front">
+        <h2>My Project</h2>
+        <img src="https://via.placeholder.com/250x150" alt="Project Image" />
+      </div>
+      <div class="card-back">
+        <p>This is a description of the project. It includes key features and technologies used.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

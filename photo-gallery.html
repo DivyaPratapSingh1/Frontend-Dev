@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+ <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease;
+}
+
+figure:hover {
+  transform: scale(1.03);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  background: #fff;
+  color: #333;
+}
+ </style>
+</head>
+<body>
+  <section class="gallery">
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 1" />
+      <figcaption>Mountain View</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 2" />
+      <figcaption>City Lights</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 3" />
+      <figcaption>Forest Trail</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 4" />
+      <figcaption>Ocean Breeze</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 5" />
+      <figcaption>Desert Dunes</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x250" alt="Sample 6" />
+      <figcaption>Snowy Peaks</figcaption>
+    </figure>
+  </section>
+</body>
+</html>
