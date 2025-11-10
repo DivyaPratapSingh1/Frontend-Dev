@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Section</title>
+  <style>
+    /* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+/* Pricing container */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Pricing cards */
+.card {
+  background: white;
+  padding: 2rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1s ease-in;
+}
+
+.card span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Featured middle card */
+.featured {
+  background: #1e3a8a;
+  color: white;
+  width: 220px;
+  height: 220px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <section class="pricing">
+    <div class="card">Basic<br><span>$19/month</span></div>
+    <div class="card featured">Pro<br><span>$49/month</span></div>
+    <div class="card">Premium<br><span>$99/month</span></div>
+  </section>
+</body>
+</html>

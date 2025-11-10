@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Layout</title>
+  <style>
+    /* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Grid container */
+.blog-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sidebar */
+aside {
+  grid-area: sidebar;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+aside ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+aside li {
+  margin-bottom: 0.5rem;
+}
+
+/* Main content */
+main {
+    flex:1;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.post {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .blog-container {
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="blog-container">
+    <header>
+      <h1>My Blog</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>Categories</h2>
+      <ul>
+        <li>Tech</li>
+        <li>Design</li>
+        <li>Travel</li>
+        <li>Food</li>
+      </ul>
+    </aside>
+
+    <main>
+      <article class="post">
+        <h3>Post Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="post">
+        <h3>Post Title 2</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </article>
+    </main>
+
+    <footer>
+      <p>Contact: blog@example.com | © 2025 My Blog</p>
+    </footer>
+  </div>
+</body>
+</html>
