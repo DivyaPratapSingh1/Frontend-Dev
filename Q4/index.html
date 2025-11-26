@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form Builder</title><script src="Q4.js" defer></script></head>
+<body>
+<h2>Dynamic Form</h2>
+<div id="formContainer"></div>
+<script>
+const builder = new FormBuilder([
+  { type: "text", label: "Username" },
+  { type: "email", label: "Email" }
+]);
+builder.renderForm("formContainer");
+</script>
+</body>
+</html>
