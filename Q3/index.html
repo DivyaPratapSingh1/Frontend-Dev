@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Q3 - Multi-Step Form</title>
+<style>
+  body{font-family:system-ui;padding:20px}
+  .step{display:none}
+  .step.active{display:block}
+  .btn{padding:6px 10px;margin:6px}
+  .error{color:red;font-size:0.9em}
+</style>
+</head>
+<body>
+<h2>Multi-Step Form</h2>
+<form id="multiForm" novalidate>
+  <div class="step active" data-step="1">
+    <label>Name: <input id="name" required></label>
+    <div class="error" id="err-name"></div>
+  </div>
+  <div class="step" data-step="2">
+    <label>Email: <input id="email" required></label>
+    <div class="error" id="err-email"></div>
+  </div>
+  <div class="step" data-step="3">
+    <label>Password: <input id="password" type="password" required></label>
+    <div class="error" id="err-password"></div>
+  </div>
+  <div style="margin-top:12px">
+    <button type="button" id="back" class="btn">Back</button>
+    <button type="button" id="next" class="btn">Next</button>
+    <button type="submit" id="submit" class="btn" style="display:none">Submit</button>
+  </div>
+</form>
+<pre id="summary"></pre>
+<script src="Q3.js"></script>
+</body>
+</html>

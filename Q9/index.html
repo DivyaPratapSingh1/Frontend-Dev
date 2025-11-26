@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Q9 - Form Submit Blocker</title>
+<style>
+  body{font-family:system-ui;padding:20px}
+  .error{color:red;font-size:0.9em}
+  input{display:block;margin:6px 0;padding:6px;width:280px}
+</style>
+</head>
+<body>
+<h2>Form with live validation</h2>
+<form id="f">
+  <label>Name<input id="name"></label><div class="error" id="e-name"></div>
+  <label>Email<input id="email"></label><div class="error" id="e-email"></div>
+  <label>Password<input id="password" type="password"></label><div class="error" id="e-pass"></div>
+  <button type="submit">Submit</button>
+</form>
+<div id="msg" style="color:green;margin-top:10px"></div>
+<script src="Q9.js"></script>
+</body></html>

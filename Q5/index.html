@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Q5 - Image Gallery</title>
+<style>
+  body{font-family:system-ui;padding:20px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:720px}
+  .grid img{width:100%;height:140px;object-fit:cover;cursor:pointer}
+  .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);visibility:hidden;opacity:0;transition:opacity .2s}
+  .modal.open{visibility:visible;opacity:1}
+  .modal .box{background:#fff;padding:10px}
+  .modal img{max-width:80vw;max-height:80vh;display:block}
+</style>
+</head>
+<body>
+<h2>Image Gallery</h2>
+<div class="grid" id="gallery">
+  <!-- 6 images -->
+  <img src="https://picsum.photos/seed/1/400/300" alt="">
+  <img src="https://picsum.photos/seed/2/400/300" alt="">
+  <img src="https://picsum.photos/seed/3/400/300" alt="">
+  <img src="https://picsum.photos/seed/4/400/300" alt="">
+  <img src="https://picsum.photos/seed/5/400/300" alt="">
+  <img src="https://picsum.photos/seed/6/400/300" alt="">
+</div>
+
+<div class="modal" id="modal">
+  <div class="box"><img id="modalImg" src=""><div style="text-align:right"><button id="closeBtn">Close</button></div></div>
+</div>
+
+<script src="Q5.js"></script>
+</body>
+</html>
