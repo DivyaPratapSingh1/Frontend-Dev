@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="interactive-faq.js"></script>
+  <style>
+    .question{padding:10px;border-bottom:1px solid #eee}
+    .answer{display:none;padding:10px 20px}
+    .focused{background:#eef}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FAQ</h1>
+    <section id="faq">
+      <div class="qwrap">
+        <h3 class="question">What is your refund policy?</h3>
+        <div class="answer">We offer a 30-day refund policy.</div>
+      </div>
+
+      <div class="qwrap">
+        <h3 class="question">How long is shipping?</h3>
+        <div class="answer">Standard shipping takes 5–7 days.</div>
+      </div>
+
+      <div class="qwrap">
+        <h3 class="question">Do you offer student discounts?</h3>
+        <div class="answer">Yes — contact support for verification.</div>
+      </div>
+
+      <div class="qwrap">
+        <h3 class="question">How to contact support?</h3>
+        <div class="answer">Email support@example.com or use chat.</div>
+      </div>
+
+      <div class="qwrap">
+        <h3 class="question">Is gift wrapping available?</h3>
+        <div class="answer">Yes, at checkout you can add gift wrap.</div>
+      </div>
+
+      <div class="qwrap">
+        <label for="note">Add a note</label>
+        <input id="note" class="answer-input" placeholder="Type note here">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

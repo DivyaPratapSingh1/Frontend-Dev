@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="product-highlight.js"></script>
+  <style>
+    .product{padding:12px;border:1px solid #ddd;border-radius:6px;margin:8px;display:inline-block;width:180px;vertical-align:top}
+    .highlight{background:#fff3cd}
+    .selected{box-shadow:0 0 0 3px rgba(0,123,255,0.12)}
+    .discount{border-color:#d9534f}
+    .details{display:none}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Products</h1>
+    <div id="products">
+      <article class="product" data-stock="5" data-price="499" data-discount="10">
+        <h2 class="title">T-Shirt</h2>
+        <p class="price">₹499</p>
+        <button class="fav">❤</button>
+        <div class="details">100% cotton. Available in S–XL.</div>
+      </article>
+
+      <article class="product" data-stock="0" data-price="1299">
+        <h2 class="title">Sneakers</h2>
+        <p class="price">₹1299</p>
+        <button class="fav">❤</button>
+        <div class="details">Comfort fit with arch support.</div>
+      </article>
+
+      <article class="product" data-stock="3" data-price="1999" data-discount="15">
+        <h2 class="title">Jacket</h2>
+        <p class="price">₹1999</p>
+        <button class="fav">❤</button>
+        <div class="details">Water-resistant. Limited edition.</div>
+      </article>
+
+      <article class="product" data-stock="2" data-price="299" data-discount="5">
+        <h2 class="title">Socks</h2>
+        <p class="price">₹299</p>
+        <button class="fav">❤</button>
+        <div class="details">Breathable and soft.</div>
+      </article>
+
+      <article class="product" data-stock="10" data-price="79">
+        <h2 class="title">Keychain</h2>
+        <p class="price">₹79</p>
+        <button class="fav">❤</button>
+        <div class="details">Metal alloy, durable.</div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

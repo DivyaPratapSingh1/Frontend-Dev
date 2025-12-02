@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q5 - Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="team-directory.js"></script>
+  <style>
+    ul{list-style:none;padding:0}
+    .member{padding:6px;border-bottom:1px solid #eee}
+    .highlight{background:#def}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Team Directory</h1>
+    <section class="department" data-dept="engineering">
+      <h2 class="manager">Alice (Manager)</h2>
+      <ul class="members">
+        <li class="member" data-role="dev">Bob</li>
+        <li class="member" data-role="dev">Charlie</li>
+        <li class="member" data-role="qa">Dana</li>
+        <li class="member" data-role="ux">Eve</li>
+      </ul>
+    </section>
+
+    <section class="department" data-dept="product">
+      <h2 class="manager">Frank (Manager)</h2>
+      <ul class="members">
+        <li class="member">Grace</li>
+        <li class="member">Heidi</li>
+        <li class="member">Ivan</li>
+        <li class="member">Judy</li>
+      </ul>
+    </section>
+
+    <button id="randomEmployee">Select Random Employee</button>
+    <button id="toggleTeam">Collapse/Expand Teams</button>
+  </main>
+</body>
+</html>
