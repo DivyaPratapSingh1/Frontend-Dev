@@ -1,0 +1,9 @@
+{
+  "employees": [
+    { "id": 1, "name": "Ravi Kumar", "status": "active" },
+    { "id": 2, "name": "Amit Singh", "status": "inactive" },
+    { "id": 3, "name": "Priya Sharma", "status": "active" },
+    { "id": 4, "name": "Neha Verma", "status": "inactive" },
+    { "id": 5, "name": "Arjun Patel", "status": "active" }
+  ]
+}

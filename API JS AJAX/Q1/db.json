@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Wireless Mouse", "price": 499, "image": "mouse.jpg" },
+    { "id": 2, "name": "Keyboard", "price": 799, "image": "keyboard.jpg" },
+    { "id": 3, "name": "Laptop Stand", "price": 999, "image": "stand.jpg" },
+    { "id": 4, "name": "USB Cable", "price": 199, "image": "cable.jpg" },
+    { "id": 5, "name": "Bluetooth Speaker", "price": 1499, "image": "speaker.jpg" }
+  ]
+}
